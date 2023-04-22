@@ -5,7 +5,7 @@ from PIL import ImageEnhance
 from IPython.display import display
 
 #read image:
-image = Image.open(r'E:\GitHub\Pillow_Tesseract_OpenCV_coursera-1\images\msi_recruitment.gif').convert('RGB')
+image = Image.open('./images/msi_recruitment.gif').convert('RGB')
 #make a black image from main image:
 blank = ImageEnhance.Brightness(image)
 blank = blank.enhance(0)
